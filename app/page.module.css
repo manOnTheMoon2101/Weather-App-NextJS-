@@ -1,0 +1,46 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  backdrop-filter: blur(100%);
+
+  width: 500px;
+  height: 500px;
+
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.searchDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.iconnDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content:end;
+ 
+}
+
+.searchI {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid grey;
+  background-color: rgb(242, 239, 229);
+  border-radius: 10px;
+
+}
+
+.submitB {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:rgb(227, 225, 217);
+}

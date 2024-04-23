@@ -63,39 +63,35 @@ function WeatherData() {
 
       {weatherData ? (
         <>
-          <h2
-            
-            style={{ textAlign: "center", fontWeight: "600" }}
-          >
+          <h2 style={{ textAlign: "center", fontWeight: "600",color:"#495E57" }}>
             {weatherData.name}
           </h2>
 
-          {/*  {weatherData.weather[0].description } */}
-
-          <div className={styles.iconnDiv} >
+       
             <Description value={weatherData.weather[0].description} />
-          </div>
+            
+     
 
-         
-            <div style={{margin:'20px'}} >
-              <p  style={{ fontSize: "30px",color:'black' }}>
-                {weatherData.main.temp}°C
-                
-              </p>
-              <p className={noto.className} style={{ fontSize: "20px",color:'grey' }}>
+          <div style={{ margin: "20px" }}>
+            <p style={{ fontSize: "30px", color: "black" }}>
+              {weatherData.main.temp}°C
+            </p>
+            <p
+              className={noto.className}
+              style={{ fontSize: "20px", color: "grey" }}
+            >
               {weatherData.weather[0].description}
-                
-              </p>
-              <p className={noto.className} style={{ fontSize: "20px",color:'#FFD1E3' }}>
+            </p>
+            <p
+              className={noto.className}
+              style={{ fontSize: "20px", color: "rgb(244, 206, 20)" }}
+            >
               {isoString}
-                
-              </p>
-            </div>
-        
+            </p>
+          </div>
         </>
       ) : (
         <p style={{ textAlign: "center" }}>Loading weather data...</p>
-       
       )}
     </div>
   );

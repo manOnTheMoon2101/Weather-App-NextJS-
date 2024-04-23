@@ -22,12 +22,6 @@
   justify-content: center;
   align-items: center;
 }
-.iconnDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content:end;
- 
-}
 
 .searchI {
   padding: 10px;
@@ -42,5 +36,6 @@
   border: none;
   padding: 10px;
   border-radius: 10px;
-  background-color:rgb(227, 225, 217);
+  background-color:#495E57;
+  color: white;
 }

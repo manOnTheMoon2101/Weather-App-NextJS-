@@ -22,7 +22,7 @@ function WeatherData() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://weather-app-next-js-pi.vercel.app/api/weather/${city}`
+        `https://weather-app-next-js-pi.vercel.app/api/weather/${city}`
       );
       setWeatherData(response.data);
     } catch (error) {

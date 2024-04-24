@@ -29,10 +29,9 @@
   border-bottom: 1px solid grey;
   background-color: rgb(242, 239, 229);
   border-radius: 10px;
-
 }
 
-.splineD{
+.splineD {
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -41,33 +40,27 @@
   border: none;
   padding: 10px;
   border-radius: 10px;
-  background-color:#495E57;
+  background-color: #495e57;
   color: white;
 }
 
-
 @media (max-width: 431px) {
-
   .main {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  
+
     border-radius: 10px;
     padding: 10px;
     background-color: white;
     backdrop-filter: blur(100%);
-   
-  
+
     width: 100%;
     height: 100%;
-  
-   
   }
 
-
-  .splineD{
+  .splineD {
     display: flex;
     flex-direction: row;
     justify-content: center;

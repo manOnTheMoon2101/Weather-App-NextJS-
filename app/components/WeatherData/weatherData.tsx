@@ -15,7 +15,7 @@ const noto = Noto_Sans_Batak({
 
 function WeatherData() {
   const [city, setCity] = useState("");
-  const [weatherData, setWeatherData] = useState(null);
+  const [weatherData, setWeatherData] = useState<any>(null);
   //const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
   //const { data } = useSWR(`http://localhost:3000/api/weather/paarl`, fetcher);

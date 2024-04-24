@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Spline from "@splinetool/react-spline";
-
+import styles from "../../page.module.css";
 function Description(value: any) {
   function findMatch(y: any, list: any) {
     for (let i = 0; i < list.length; i++) {
@@ -30,6 +30,7 @@ function Description(value: any) {
   let myList2 = [
     "scattered clouds",
     "few clouds",
+    "mist",
     "broken clouds",
     "overcast clouds",
   ];
@@ -40,22 +41,22 @@ function Description(value: any) {
   if (value.value == "clear sky") {
     x = (
       <Spline
-        style={{ display: "flex", flexDirection: "row", justifyContent: "end" }}
+       className={styles.splineD}
         scene="https://draft.spline.design/6YVF9rFIh9M-O92I/scene.splinecode"
       />
     );
   } else if (value.value == result) {
     x = (
       <Spline
-        style={{ display: "flex", flexDirection: "row", justifyContent: "end" }}
-        scene="https://draft.spline.design/bsn9eRqglje1STtj/scene.splinecode"
+      className={styles.splineD}
+        scene="https://draft.spline.design/mUcyW1YpZ0k1hAtX/scene.splinecode"
       />
     );
   } else if (value.value == result2) {
     x = (
       <Spline
-        style={{ display: "flex", flexDirection: "row", justifyContent: "end" }}
-        scene="https://draft.spline.design/RDTnp8nEYtIYuw9e/scene.splinecode"
+      className={styles.splineD}
+        scene="https://draft.spline.design/fU5M7gAGyi0Usmmj/scene.splinecode"
       />
     );
   }

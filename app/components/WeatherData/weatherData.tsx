@@ -30,7 +30,7 @@ function WeatherData() {
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       const response = await axios.get(
-        `http://localhost:3000/api/weather/${city}`
+        `https://weather-app-next-js-pi.vercel.app/api/weather/${city}`
       );
       setWeatherData(response.data);
     } catch (error) {
